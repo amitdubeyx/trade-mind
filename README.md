@@ -50,6 +50,7 @@ trade-mind/
 
 Install the following before starting:
 
+- Git, if you want to clone the repository
 - Python 3.10 or newer
 - Internet access for market data, news, and Gemini analysis
 - A Google Gemini API key if you want to use the AI analysis tab
@@ -63,10 +64,18 @@ macOS/Linux: python3 --version
 
 ### 1. Get the project
 
-Clone the repository or extract the shared project folder. Then open a terminal
-in the project folder. If the folder is named `trade-mind`, you can use:
+If Git is installed, clone the repository:
 
-```text
+```bash
+git clone https://github.com/amitdubeyx/trade-mind.git
+cd trade-mind
+```
+
+Alternatively, download the ZIP or extract the shared project folder, then
+open a terminal in that project folder. If your terminal is currently in the
+parent directory and the folder is named `trade-mind`, use:
+
+```bash
 cd trade-mind
 ```
 
@@ -205,6 +214,9 @@ With the virtual environment active, run:
 ```bash
 python -m unittest discover -s tests -v
 ```
+
+The same test suite runs automatically through GitHub Actions for pushes and
+pull requests.
 
 ### Using the dashboard
 
