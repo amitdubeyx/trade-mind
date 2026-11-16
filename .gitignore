@@ -1,0 +1,70 @@
+# --- Secrets and local environment files ---
+.env
+.env.*
+!.env.example
+
+# --- Python virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# --- Python cache and generated files ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# --- Packaging and build output ---
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+MANIFEST
+
+# --- Test, coverage, and type-checking output ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+nosetests.xml
+
+# --- Streamlit local configuration and secrets ---
+.streamlit/
+
+# --- Jupyter and notebook checkpoints ---
+.ipynb_checkpoints/
+
+# --- Local databases, logs, and temporary files ---
+*.db
+*.sqlite
+*.sqlite3
+*.log
+*.tmp
+*.temp
+
+# --- Operating-system files ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- Editors and IDEs ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# --- Local tooling ---
+.cache/
+node_modules/
